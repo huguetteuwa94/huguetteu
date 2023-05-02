@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="hu.css">
+    <title>Document</title>
+</head>
+<body>y
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">SHOES STORE</a></div>
+            <ul class="links">
+                <li><a href="hero">Home</li>
+                <li><a href="about">About</li>
+                <li><a href="services">Service</li>
+                <li><a href="contact">Contact</li>
+            </ul>
+            <a href="#" class="action_btn">Get Started</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="hero">Home</li>
+            <li><a href="about">About</li>
+            <li><a href="services">Service</li>
+            <li><a href="contact">Contact</li>
+            <li><a href="#" class="action_btn">Get Started</a></li>
+        </div>
+    </header>
+    <form action="">
+        <div class="email">
+            <p>email less than 6 characterd</p>
+        </div>
+        email :<input type="text" id="one"><br><br>
+        <div class="email">
+            <p>password less than 6 characters</p>
+        </div>
+        password:<input type="text" id="two">
+        <button id="btn">submit</button>
+        <div class="active"></div>
+        </form>
+    
+    <main>
+        <section id="hero">
+            <h1>Welcome</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur <br /> adipisicing elit. Quos repudiandae, dolorem, porro dignissimos, nostrum illum labore repellendus accusamus atque 
+            error nisi incidunt quis sequi eius eaque cum. Ad, eligendi voluptate!</p>
+        </section>
+    </main>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function (){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ?'fa-solid fa-xmark'
+            :'fa-solid fa-bars'
+        }
+    </script>
+</body>
+</html>

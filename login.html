@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+
+</head>
+<body>
+    <div class="box">
+   <form>
+    <div class="par">
+        <p>login form</p>
+        </div>
+        <div class="inputbox">
+        <input type="text" placeholder="Username">
+    <input type="text" placeholder="Email">
+    <input type="password" placeholder="Password">
+</div>
+        <a href="">Forgot password</a><br>
+        <input type="button" value="Save">
+</form>
+<form>
+    <div class="email" id="email">
+        <p>Email less than 6 chars</p>
+    </div>
+    <label id="label">Email: </label><input type="email" id="one" spellcheck="false" onkeyup="validateEmail()">
+    <span id="msg"></span>
+    <div class="password" id="password">
+        <p>pass less than 8 chars</p>
+    </div>
+    Password: <input type="password" id="two">
+    <button id="btn">add</button>
+</form><br>
+    <script src="login.js"></script>
+</div>
+</body>
+</html>

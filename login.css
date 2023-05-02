@@ -1,0 +1,56 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background: url("motel.png");
+    background-size: cover;
+}
+.box{
+    position: absolute;
+    top: 50%;
+    right: 55%;
+    transform: translate(-50%,-50%);
+    padding: 60px;
+    width: 300px;
+    height: 400px;
+}
+.box .inputbox{
+    position: relative;
+}
+.box .inputbox input{
+    margin-bottom: 20px;
+    width: 200px;
+    height: 40px;
+    padding-left: 50px;
+    background: #D9D9D9;
+    border: none;
+    border-radius: 5px;
+}
+.box .inputbox input::placeholder{
+    font-weight: bolder;
+    font-style: italic;
+}
+.par{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 40px;
+    padding-right:50px;
+    color: white;
+    position: absolute;
+    top: 1%;
+    left: 5%;
+}
+.password{
+    visibility: hidden;
+}
+
+.email{
+    visibility: hidden;
+}
+
+.active{
+    visibility: visible;
+}
+
